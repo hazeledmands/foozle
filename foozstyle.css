@@ -1,0 +1,72 @@
+BODY    { background: black; 
+        color: white }
+P       { color: black;
+		font-size: 80%;
+		margin-left: 10%;
+		margin-right: 10%; 
+        text-indent: 20%;
+        font-family: Comic Sans MS, Verdana, Arial, Helvetica, helv, sans-serif } 
+H1 {    text-align: center;
+		color: white;
+        margin-left: 5%;
+        font-weight: medium;
+        font-family: Arial Black, Arial, Helvetica, helv, sans-serif }
+.contrast { background: darkorange; } 
+.opening { font-size: 80%;
+        margin-left: 10%;
+		margin-right: 10%; }
+H2 {    color: white;
+        margin-left: 25%; 
+        font-weight: medium;
+        font-family: Arial Black, Arial, Helvetica, helv, sans-serif }
+.section2 { font-size: 55%;
+        margin-left: 30%;
+        margin-right: 30%; }
+H3 {    color: white;
+        margin-left: 45%;
+        font-weight: medium;
+        font-family: Arial Black, Arial, Helvetica, helv, sans-serif }
+.section3 { font-size: 55%;
+        margin-left: 50%;
+        margin-right: 10%; }
+.credit { margin-top: 5px;
+        font-size: 90%;
+        font-weight: bold;
+        text-indent: 0;
+        margin-left: 10%;
+        margin-right: 20%; }
+.descript {text-indent: 0;
+        color: silver;
+        margin-left: 10%;
+        margin-right: 20%;
+        font-size: 80%;
+        font-family: Verdana, Arial, Helvetica, helv, sans-serif }
+A:link  { color: purple;
+        font-weight: bold;
+        text-decoration: none; }
+A:visited  { color: purple;
+        font-weight: bold;
+        text-decoration: none; }
+.topline {color: silver; 
+        text-indent: 0;
+        margin-left: 10%; 
+        margin-right: 10%; 
+        font-size: 80%;  
+        font-family: Verdana, Arial, Helvetica, helv, sans-serif }
+.navbar {color: silver;
+		font-weight: bold;
+        text-indent: 0;
+        font-size: 80%;  
+        font-family: Verdana, Arial, Helvetica, helv, sans-serif }
+.subhead {text-align: center;
+		font-size: 50%;
+		color: white;
+        margin-left: 5%; }
+#sbr1 { color: coral }
+.productlist {color: black;
+		font-size: 80%;
+		font-weight: bold;
+		margin-left: 10%;
+		margin-right: 10%;
+        font-family: Comic Sans MS, Verdana, Arial, Helvetica, helv, sans-serif }
+

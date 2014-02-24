@@ -1,0 +1,113 @@
+<HTML>
+	<HEAD>
+
+		<META NAME="GENERATOR" Content="Microsoft Developer Studio">
+		<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+		<LINK REL=StyleSheet HREF="foozstyle.css" TYPE="text/css">
+		<TITLE>Welcome to Foozle Industries!</TITLE>
+		<SCRIPT>
+// CREDITS:
+// Inline clock: fits anywhere into any text
+// by Urs Dudli and Peter Gehrig 
+// Copyright (c) 2000 Peter Gehrig and Urs Dudli. All rights reserved.
+// Permission given to use the script provided that this notice remains as is.
+// Additional scripts can be found at http://www.24fun.com
+// info@24fun.com
+// 7/5/2001
+
+// IMPORTANT: 
+// If you add this script to a script-library or a script-archive 
+// you have to insert a link to http://www.24fun.com 
+// right into the webpage where the script will be displayed.
+
+// CONFIGURATION:
+// Go to http://www.24fun.com, open category 'date' and 
+// download the ZIP-file of this script containing
+// the script-file with step-by-step instructions for easy configuration
+
+var clockid=new Array()
+var clockidoutside=new Array()
+var i_clock=-1
+var thistime= new Date()
+var hours=thistime.getHours()
+var minutes=thistime.getMinutes()
+var seconds=thistime.getSeconds()
+if (eval(hours) <10) {hours="0"+hours}
+if (eval(minutes) < 10) {minutes="0"+minutes}
+if (seconds < 10) {seconds="0"+seconds}
+var thistime = hours+":"+minutes+":"+seconds
+	
+function writeclock() {
+	i_clock++
+	if (document.all || document.getElementById || document.layers) {
+		clockid[i_clock]="clock"+i_clock
+		document.write("<span id='"+clockid[i_clock]+"' style='position:relative'>"+thistime+"</span>")
+	}
+}
+
+function clockon() {
+	thistime= new Date()
+	hours=thistime.getHours()
+	minutes=thistime.getMinutes()
+	seconds=thistime.getSeconds()
+	if (eval(hours) <10) {hours="0"+hours}
+	if (eval(minutes) < 10) {minutes="0"+minutes}
+	if (seconds < 10) {seconds="0"+seconds}
+	thistime = hours+":"+minutes+":"+seconds
+		
+	if (document.all) {
+		for (i=0;i<=clockid.length-1;i++) {
+			var thisclock=eval(clockid[i])
+			thisclock.innerHTML=thistime
+		}
+	}
+	
+	if (document.getElementById) {
+		for (i=0;i<=clockid.length-1;i++) {
+			document.getElementById(clockid[i]).innerHTML=thistime
+		}
+	}
+	var timer=setTimeout("clockon()",1000)
+}
+window.onload=clockon
+		</SCRIPT>
+
+	</HEAD>
+
+	<BODY>
+	
+		<P CLASS=Subhead>Foozle.com
+		<H1>Foozle Industries!</H1>
+	
+		<TABLE WIDTH=100%>
+			<TR>
+				<TD VALIGN=Top CLASS=Navbar WIDTH=30%>
+					<UL>
+						<LI>Foozle Home
+						<LI><A HREF="company/OurCompany.htm" ID=sbr1>About our Company</A>
+						<LI><A HREF="products/Products.htm" ID=sbr1>Products</A>
+						<LI><A HREF="order/orderform.htm" ID=sbr1>Order Form</A>
+						<LI><A HREF="customer/Customer.htm" ID=sbr1>Customer Support</A>
+						<LI><A HREF="contact/Contact.htm" ID=sbr1>Contact Us</A>
+						<LI><A HREF="legal/Legal.htm" ID=sbr1>Legal Information</A>
+						<CENTER><IMG SRC="Foozlogo.gif" VSPACE=30></CENTER>
+					</UL>
+				</TD>
+				<TD VALIGN=Top CLASS=Contrast>
+	
+					<P CLASS=Opening>Hello, friend, and welcome to Foozle Industries! (Where
+					we drain your cash!) We offer the finest of products, including the
+					Whatchamacallit and the Shiznatch.
+
+					<P>Click one of the links on your left to navigate through the Foozle
+					website.
+
+					<P>Page Last Loaded: <SCRIPT>writeclock()</SCRIPT>
+		
+				</TD>
+			</TR>
+		</TABLE>
+
+
+	</BODY>
+</HTML>
